@@ -53,10 +53,15 @@ import p_img49 from './p_img49.png'
 import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
+import footwear1 from './footwear1.jpeg'
+import footwear2 from './footwear2.jpeg'
+import footwear3 from './footwear3.jpeg'
+
 
 
 import logo from './logo.png'
 import hero_img from './hero_image.jpg'
+import footwear1hero from './footwear1hero.jpeg'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'
@@ -92,7 +97,9 @@ export const assets = {
     contact_img,
     razorpay_logo,
     stripe_logo,
-    cross_icon
+    cross_icon,
+   footwear1hero
+    
 }
 
 export const products = [
@@ -718,6 +725,48 @@ export const products = [
         sizes: ["S", "M", "L", "XL"],
         date: 1716668445448,
         bestseller: false
+    },
+
+
+    // added for shoes 
+    {
+        _id: "1aaaba",
+        name: "Men's Running Shoes",
+        description: "Lightweight and breathable running shoes with a cushioned sole for extra comfort.",
+        price: 999,
+        image: [footwear1],  // Use an appropriate footwear image
+        category: "Footwear",
+        subCategory: "Shoes",
+        sizes: ["7", "8", "9", "10"],
+        date: 1716639345448,
+        bestseller: true
+    },
+    
+    {
+        _id: "2aaabb",
+        name: "Women's Casual Sneakers",
+        description: "Stylish and comfortable sneakers perfect for casual outings.",
+        price: 1200,
+        image: [footwear2],  // Use an appropriate footwear image
+        category: "Footwear",
+        subCategory: "Sneakers",
+        sizes: ["5", "6", "7", "8"],
+        date: 1716639345449,
+        bestseller: false
+    },
+    
+    {
+        _id: "3aaabc",
+        name: "Kids Sport Shoes",
+        description: "Durable and lightweight sport shoes for active kids.",
+        price: 850,
+        image: [footwear3],  // Use an appropriate footwear image
+        category: "Footwear",
+        subCategory: "Sports Shoes",
+        sizes: ["4", "5", "6"],
+        date: 1716639345450,
+        bestseller: true
     }
+    
 
 ]

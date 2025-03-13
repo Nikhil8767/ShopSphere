@@ -21,8 +21,10 @@ const Navbar = () => {
              {/* Dropdown for Categories */}
         <div 
           className="relative flex flex-col items-center gap-1 cursor-pointer"
-          onClick={() => setDropdownOpen(true)}
-          onDoubleClick={() => setDropdownOpen(false)}
+          // onClick={() => setDropdownOpen(true)}
+          // onDoubleClick={() => setDropdownOpen(false)}
+          onClick={() => setDropdownOpen(prev => !prev)}
+
         >
           <p>CATEGORIES</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />

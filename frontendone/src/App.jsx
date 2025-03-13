@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Clothing from './pages/Clothing'
 import Accessories from './pages/Accessories'
 import Cart from './pages/Cart'
-import Footware from './pages/Footware'
+import Footware from './pages/Footwear'
 import Collection from './pages/Collection'
 import Login from './pages/Login'
 import PlaceOrder from './pages/PlaceOrder'
@@ -17,14 +17,14 @@ import About from './pages/About'
 
 const App = () => {
   return (
-    <div className='font-bold'>
+    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/clothing' element={<Clothing/>}/>
         <Route path='/accessories' element={<Accessories/>}/>
         <Route path='/cart' element={<Cart/>}/>
-        <Route path='/footware' element={<Footware/>}/>
+        <Route path='/footwear' element={<Footware/>}/>
         <Route path='/collection' element={<Collection/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/contact' element={<Contact/>}/>
