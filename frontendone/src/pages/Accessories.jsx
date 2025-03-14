@@ -1,8 +1,9 @@
 import React from 'react'
+import HeroAccessories from '../components/HeroAccessories'
 
 const Accessories = () => {
   return (
-    <div>Accessories</div>
+    <HeroAccessories/>
   )
 }
 

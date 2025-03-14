@@ -56,6 +56,12 @@ import p_img52 from './p_img52.png'
 import footwear1 from './footwear1.jpeg'
 import footwear2 from './footwear2.jpeg'
 import footwear3 from './footwear3.jpeg'
+import backcover2 from './backcover2.jpeg'
+import backcover3 from './backcover3.jpeg'
+import cahrger1 from './cahrger1.jpeg'
+import ear1 from './ear1.jpeg'
+import ear2 from './ear2.jpeg'
+import ear3 from './ear3.jpeg'
 
 
 
@@ -78,6 +84,10 @@ import contact_img from './contact_img.png'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
+import hero1_acc from './hero1_acc.avif'
+
+
+
 
 export const assets = {
     logo,
@@ -98,7 +108,8 @@ export const assets = {
     razorpay_logo,
     stripe_logo,
     cross_icon,
-   footwear1hero
+   footwear1hero,
+   hero1_acc
     
 }
 
@@ -174,7 +185,7 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 110,
         image: [p_img10],
-        category: "Men",
+        category: "clothing",
         subCategory: "Bottomwear",
         sizes: ["S", "L", "XL"],
         date: 1716622235448,
@@ -186,7 +197,7 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 120,
         image: [p_img11],
-        category: "Men",
+        category: "clothing",
         subCategory: "Topwear",
         sizes: ["S", "M", "L"],
         date: 1716623345448,
@@ -198,7 +209,7 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 150,
         image: [p_img12],
-        category: "Men",
+        category: "clothing",
         subCategory: "Topwear",
         sizes: ["S", "M", "L", "XL"],
         date: 1716624445448,
@@ -723,6 +734,68 @@ export const products = [
         subSubCategory: "Kids Sports Shoes",
         sizes: ["4", "5", "6"],
         date: 1716639345450,
+        bestseller: true
+    },
+
+    // putting accessories here
+    {
+        _id: "4aabbc",
+        name: "Men's Leather Wallet",
+        description: "Premium leather wallet with multiple compartments for cards and cash.",
+        price: 799,
+        image: [backcover2],  
+        category: "Accessories",
+        subCategory: "Wallets",
+        subSubCategory: "Men's Wallet",
+        date: 1716639345451,
+        bestseller: true
+    },
+    {
+        _id: "5aabbc",
+        name: "Women's Designer Handbag",
+        description: "Elegant handbag with a stylish look, perfect for any occasion.",
+        price: 2500,
+        image: [backcover3],  
+        category: "Accessories",
+        subCategory: "Bags",
+        subSubCategory: "Handbags",
+        date: 1716639345452,
+        bestseller: false
+    },
+    {
+        _id: "6aabbc",
+        name: "Unisex Smartwatch",
+        description: "Feature-packed smartwatch with heart rate monitoring and fitness tracking.",
+        price: 3500,
+        image: [ear1],  
+        category: "Accessories",
+        subCategory: "Watches",
+        subSubCategory: "Smartwatches",
+        date: 1716639345453,
+        bestseller: true
+    },
+    {
+        _id: "7aabbc",
+        name: "Men's Sunglasses",
+        description: "Polarized UV-protected sunglasses with a sleek design.",
+        price: 999,
+        image: [ear2],  
+        category: "Accessories",
+        subCategory: "Eyewear",
+        subSubCategory: "Sunglasses",
+        date: 1716639345454,
+        bestseller: false
+    },
+    {
+        _id: "8aabbc",
+        name: "Women's Fashion Earrings",
+        description: "Trendy earrings with a modern design, perfect for parties.",
+        price: 499,
+        image: [ear3],  
+        category: "Accessories",
+        subCategory: "Jewelry",
+        subSubCategory: "Earrings",
+        date: 1716639345455,
         bestseller: true
     }
     

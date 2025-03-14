@@ -10,7 +10,8 @@ const LatestCollection = () => {
     const[LatestProduct,setLatestProduct]=useState([]);
 
     useEffect(()=>{
-        setLatestProduct(products.slice(0,10));
+        const filterClothing=products.filter(item=>item.category==="clothing").slice(0,10);
+        setLatestProduct(filterClothing);
     },[])
   return (
     <div className='my-10'>
