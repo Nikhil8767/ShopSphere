@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import LatestFootwareCollection from './LatestFootwareCollection'
 
 const HeroFootwear = () => {
   return (
@@ -27,9 +28,10 @@ const HeroFootwear = () => {
 
         {/* hero right side  the image wil be ther */}
 
-        <img src={assets.hero_footware} className='w-full sm:w-1/2 max-h-[500px]' alt="" />
+        <img src={assets.footwear1hero} className='w-full sm:w-1/2 max-h-[500px]' alt="" />
     </div>
     </div>
+    <LatestFootwareCollection/>
     </>
   )
 }
