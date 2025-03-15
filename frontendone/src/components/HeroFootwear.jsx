@@ -3,6 +3,7 @@ import { assets } from '../assets/assets'
 import LatestFootwareCollection from './LatestFootwareCollection'
 import BestSelFootwear from './BestSelFootwear'
 import OurPolicy from './OurPolicy'
+import NewsLetterBox from './NewsLetterBox'
 
 const HeroFootwear = () => {
   return (
@@ -36,6 +37,7 @@ const HeroFootwear = () => {
     <LatestFootwareCollection/>
     <BestSelFootwear/>
     <OurPolicy/>
+    <NewsLetterBox/>
     </>
   )
 }
