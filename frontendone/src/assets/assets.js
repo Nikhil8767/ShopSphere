@@ -151,7 +151,7 @@ export const products = [
         subSubCategory: "Trousers",
         sizes: ["S", "L", "XL"],
         date: 1716621542448,
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaaao",
@@ -164,7 +164,7 @@ export const products = [
         subSubCategory: "Trousers",
         sizes: ["S", "M", "L", "XL"],
         date: 1716627745448,
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaaak",
@@ -177,7 +177,7 @@ export const products = [
         subSubCategory: "T-Shirts",
         sizes: ["S", "M", "L"],
         date: 1716623345448,
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaaaj",

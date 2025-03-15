@@ -10,7 +10,7 @@ const Navbar = () => {
     const [showCategory,setShowCategory]=useState(false)
   return (
     <div className='flex items-center justify-between py-6 px-15 font-medium'>
-        <img src="/" alt="shopSphere" />
+        <Link to="/"><img src="/" alt="shopSphere" /></Link>
         <ul className='hidden sm:flex gap-5 text-sm text-gray-700 hidden'>
 
             <NavLink to='/' className='flex flex-col items-center gap-1 '>

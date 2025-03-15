@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import LatestFootwareCollection from './LatestFootwareCollection'
+import BestSelFootwear from './BestSelFootwear'
 
 const HeroFootwear = () => {
   return (
@@ -32,6 +33,7 @@ const HeroFootwear = () => {
     </div>
     </div>
     <LatestFootwareCollection/>
+    <BestSelFootwear/>
     </>
   )
 }

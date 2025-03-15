@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import LatestAccessories from './LatestAccessories'
+import BestSelAcc from './BestSelAcc'
 
 const HeroAccessories = () => {
   return (
@@ -32,6 +33,7 @@ const HeroAccessories = () => {
             </div>
             </div>
             <LatestAccessories/>
+            <BestSelAcc/>
     </>
   )
 }
