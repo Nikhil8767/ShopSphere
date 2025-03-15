@@ -2,6 +2,7 @@ import React from 'react'
 import { assets } from '../assets/assets'
 import LatestCollection from './LatestCollection'
 import BestSellFashion from './BestSellFashion'
+import OurPolicy from './OurPolicy'
 
 const HeroFashion = () => {
     return (
@@ -35,6 +36,7 @@ const HeroFashion = () => {
         </div>
         <LatestCollection></LatestCollection>
         <BestSellFashion/>
+        <OurPolicy/>
         </>
     )
 }

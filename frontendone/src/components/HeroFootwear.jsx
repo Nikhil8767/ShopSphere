@@ -2,6 +2,7 @@ import React from 'react'
 import { assets } from '../assets/assets'
 import LatestFootwareCollection from './LatestFootwareCollection'
 import BestSelFootwear from './BestSelFootwear'
+import OurPolicy from './OurPolicy'
 
 const HeroFootwear = () => {
   return (
@@ -34,6 +35,7 @@ const HeroFootwear = () => {
     </div>
     <LatestFootwareCollection/>
     <BestSelFootwear/>
+    <OurPolicy/>
     </>
   )
 }
