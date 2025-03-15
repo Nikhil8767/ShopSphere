@@ -13,6 +13,7 @@ import Order from './pages/Order'
 import Product from './pages/Product'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
         <Route path='/about' element={<About/>}/>
 
       </Routes>
+      <Footer/>
     </div>
   )
 }
