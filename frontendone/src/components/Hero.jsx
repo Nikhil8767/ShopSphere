@@ -1,15 +1,9 @@
-// import React from 'react'
-
-// const Hero = () => {
-//   return (
-//     <>
-        import React, { useState, useEffect } from 'react'
-import { assets } from '../assets/assets'  // Assuming assets are imported from a local file
-import LatestCollection from './LatestCollection'
-import BestSellFashion from './BestSellFashion'
-import OurPolicy from './OurPolicy'
-import NewsLetterBox from './NewsLetterBox'
+import React, { useState, useEffect } from 'react'
+import { assets, products } from '../assets/assets'  // Assuming assets are imported from a local file
 import { Link } from 'react-router-dom'
+import LatestAccessories from './LatestAccessories.jsx'
+import LatestFootwareCollection from './LatestFootwareCollection.jsx'
+import LatestCollection from './LatestCollection.jsx'
 
 // Assuming you have these images in your assets
 // If not, replace with appropriate paths
@@ -123,7 +117,7 @@ const Hero = () => {
                 alt="Clothing collection" 
               />
               <div className='absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-                <Link to="/fashion" className='bg-white text-[#414141] px-6 py-2 font-medium'>
+                <Link to="/clothing" className='bg-white text-[#414141] px-6 py-2 font-medium'>
                   View Collection
                 </Link>
               </div>
@@ -175,14 +169,46 @@ const Hero = () => {
           </div>
         </div>
       </div>
+ {/* here we are adding the latest collection and a button to explore it***************************** */}
+
+
+   {/* Latest Collections Section */}
+   <div className='px-4 sm:px-10 py-16'>
+        <h2 className='text-3xl prata-regular text-center mb-12'>
+          Latest Collections
+          <div className='w-20 h-[2px] bg-[#414141] mx-auto mt-4'></div>
+        </h2>
+        
+        {/* Latest Fashion */}
+        <div className='mb-10 border border-gray-200 p-4 text-center'>
+          <LatestCollection products={products.slice(0,5)} />
+          <Link to="/clothing" className="inline-block mt-4 bg-[#414141] text-white px-6 py-2 font-medium">
+            Explore Fashion
+          </Link>
+        </div>
+
+        {/* Latest Footwear */}
+        <div className='mb-10 border border-gray-200 p-4 text-center'>
+          <LatestFootwareCollection />
+          <Link to="/footwear" className="inline-block mt-4 bg-[#414141] text-white px-6 py-2 font-medium">
+            Explore Footwear
+          </Link>
+        </div>
+
+        {/* Latest Accessories */}
+        <div className='border border-gray-200 p-4 text-center'>
+          <LatestAccessories />
+          <Link to="/accessories" className="inline-block mt-4 bg-[#414141] text-white px-6 py-2 font-medium">
+            Explore Accessories
+          </Link>
+        </div>
+      </div>
+
+
+
     </>
   )
 }
 
-// export default MainPage
-
-//     </>
-//   )
-// }
 
 export default Hero
