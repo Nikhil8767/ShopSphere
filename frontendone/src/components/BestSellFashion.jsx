@@ -10,7 +10,7 @@ const BestSellFashion = () => {
 
     useEffect(()=>{
         const bestProduct=products.filter((item)=>item.category==='clothing' && (item.bestseller));
-        setBestSeller(bestProduct.slice(0,5))
+        setBestSeller(bestProduct.slice(0,10))
     },[])
 
   return (

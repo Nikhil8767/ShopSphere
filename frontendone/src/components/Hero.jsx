@@ -5,6 +5,10 @@ import LatestAccessories from './LatestAccessories.jsx'
 import LatestFootwareCollection from './LatestFootwareCollection.jsx'
 import LatestCollection from './LatestCollection.jsx'
 
+
+
+// console.log("Thisi s my products" , products);
+
 // Assuming you have these images in your assets
 // If not, replace with appropriate paths
 const categoryImages = {
@@ -181,7 +185,7 @@ const Hero = () => {
         
         {/* Latest Fashion */}
         <div className='mb-10 border border-gray-200 p-4 text-center'>
-          <LatestCollection products={products.slice(0,5)} />
+          <LatestCollection products={products.slice(0,5)}/>
           <Link to="/clothing" className="inline-block mt-4 bg-[#414141] text-white px-6 py-2 font-medium">
             Explore Fashion
           </Link>

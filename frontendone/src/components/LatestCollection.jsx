@@ -10,7 +10,7 @@ const LatestCollection = () => {
     const[LatestProduct,setLatestProduct]=useState([]);
 
     useEffect(()=>{
-        const filterClothing=products.filter(item=>item.category==="clothing").slice(0,10);
+        const filterClothing=products.filter(item=>item.category==="clothing").slice(0,5);
         setLatestProduct(filterClothing);
     },[])
   return (
